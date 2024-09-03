@@ -1,0 +1,28 @@
+
+<div id="report-title"><h1>Panne</h1></div>
+<table className="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Vehicule Id</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Note</th>
+            <th>Statut</th>
+            <th>Photo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.id %></td>
+            <td><%= record.vehicule_id %></td>
+            <td><%= record.date %></td>
+            <td><%= record.type %></td>
+            <td><%= record.note %></td>
+            <td><%= record.statut %></td>
+            <td><%= record.photo %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
